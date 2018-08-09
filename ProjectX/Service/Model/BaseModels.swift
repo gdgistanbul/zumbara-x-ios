@@ -14,3 +14,15 @@ class BaseModel: EVObject { }
 class BaseRequestModel : BaseModel { }
 
 class BaseResponseModel : BaseModel { }
+
+class ErrorModel : BaseModel {
+    var code : String?
+}
+
+class PokemonFormModel : BaseModel{
+    var url : String?
+    var name : String?
+}
+class PokemonResponseModel : BaseResponseModel{
+    var forms :[PokemonFormModel] = [PokemonFormModel]()
+}
