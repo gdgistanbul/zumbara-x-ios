@@ -14,12 +14,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
-        ServiceManager.shared.request(url: "https://pokeapi.co/api/v2/pokemon/1/",
-                                      responseClass: PokemonResponseModel.self)
+        ServiceManager.shared.request(endPoint: ServiceEndpoints.feed,
+                                      responseClass: FeedResponseModel.self,
+                                      successCompletion :{(response) in
+                                        if let responseModel = response as? FeedResponseModel{
+                                            print(responseModel)
+                                    }
+        })
         
         
     }

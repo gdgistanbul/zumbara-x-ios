@@ -9,6 +9,8 @@
 import UIKit
 import EVReflection
 
+//class BaseModel: Codable { } We can continue with Codable either.
+
 class BaseModel: EVObject { }
 
 class BaseRequestModel : BaseModel { }
@@ -19,10 +21,20 @@ class ErrorModel : BaseModel {
     var code : String?
 }
 
-class PokemonFormModel : BaseModel{
-    var url : String?
-    var name : String?
+class FeedResponseModel : BaseResponseModel{
+    var feedItems : [FeedItemModel] = [FeedItemModel]()
 }
-class PokemonResponseModel : BaseResponseModel{
-    var forms :[PokemonFormModel] = [PokemonFormModel]()
+
+class FeedItemModel : BaseModel {
+    var id : Int = 0
+    var categoryId : Int = 0
+    var lat : CGFloat = 0.0
+    var long : CGFloat = 0.0
+    var title : String?
+    var openingTime : Int = 0
+    var maxLiveTime : Int = 0
+    var serviceHour : Int = 0
+    var numberOfComments : Int = 0
+    var numberOfBids : Int = 0
 }
+

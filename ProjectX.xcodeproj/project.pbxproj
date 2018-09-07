@@ -19,6 +19,7 @@
 		E25D0D1620DE4F3D0050A254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25D0D1420DE4F3D0050A254 /* LaunchScreen.storyboard */; };
 		E25D0D2120DE4F3D0050A254 /* ProjectXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D0D2020DE4F3D0050A254 /* ProjectXTests.swift */; };
 		E25D0D2C20DE4F3D0050A254 /* ProjectXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D0D2B20DE4F3D0050A254 /* ProjectXUITests.swift */; };
+		E2B38D3021419F9D00AFEE1D /* ServiceEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B38D2F21419F9D00AFEE1D /* ServiceEndpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E25D0D2720DE4F3D0050A254 /* ProjectXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25D0D2B20DE4F3D0050A254 /* ProjectXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectXUITests.swift; sourceTree = "<group>"; };
 		E25D0D2D20DE4F3D0050A254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B38D2F21419F9D00AFEE1D /* ServiceEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				E2222F412113789300AB33CC /* Model */,
 				E2222F442113854800AB33CC /* ServiceManager.swift */,
+				E2B38D2F21419F9D00AFEE1D /* ServiceEndpoints.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				E2222F43211378A800AB33CC /* BaseModels.swift in Sources */,
 				E25D0D0E20DE4F3A0050A254 /* ViewController.swift in Sources */,
 				E25D0D0C20DE4F3A0050A254 /* AppDelegate.swift in Sources */,
+				E2B38D3021419F9D00AFEE1D /* ServiceEndpoints.swift in Sources */,
 				E2222F452113854900AB33CC /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

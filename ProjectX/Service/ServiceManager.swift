@@ -17,12 +17,14 @@ class ServiceManager: NSObject {
     typealias SuccessCompletion = (BaseResponseModel?) -> Void
     typealias ErrorCompletion = (ErrorModel?) -> Void
     
-    func request(url : String,
+    func request(endPoint : ServiceEndpoints,
                  method : HTTPMethod? = .post,
                  request : BaseRequestModel? = nil,
                  responseClass : BaseResponseModel.Type? = BaseResponseModel.self,
                  successCompletion : SuccessCompletion? = nil,
                  errorCompletion : ErrorCompletion? = nil){
+        
+        let url = endPoint.getUrl()
         
         Alamofire.request(url).responseData { (response) in
             switch response.result{
@@ -30,8 +32,13 @@ class ServiceManager: NSObject {
                 do{
                     let dataDictionary = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? NSDictionary
                     let className = NSStringFromClass(responseClass!)
-//                    EVReflection.setBundleIdentifier(BaseModel.self)
+                    EVReflection.setBundleIdentifier(BaseModel.self)
                     let responseModel = EVReflection.fromDictionary(dataDictionary!, anyobjectTypeString: className) as? BaseResponseModel
+    
+                    /* Codable Implementation */
+                    // let responseModel = try? JSONDecoder().decode(responseClass!, from: data)
+                    /* Codable Implementation End */
+                    
                     debugPrint(responseModel)
                     successCompletion?(responseModel)
                 }catch{
