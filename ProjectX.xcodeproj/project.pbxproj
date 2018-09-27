@@ -17,6 +17,10 @@
 		E25D0D1620DE4F3D0050A254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25D0D1420DE4F3D0050A254 /* LaunchScreen.storyboard */; };
 		E25D0D2120DE4F3D0050A254 /* ProjectXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D0D2020DE4F3D0050A254 /* ProjectXTests.swift */; };
 		E25D0D2C20DE4F3D0050A254 /* ProjectXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D0D2B20DE4F3D0050A254 /* ProjectXUITests.swift */; };
+		E2FBB38E215D48F900D83B1C /* FlexStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB38C215D48F900D83B1C /* FlexStyles.swift */; };
+		E2FBB38F215D48F900D83B1C /* FlexStyleTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB38D215D48F900D83B1C /* FlexStyleTypes.swift */; };
+		E2FBB391215D49D700D83B1C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB390215D49D700D83B1C /* UIColor+Extensions.swift */; };
+		E2FBB393215D4A3D00D83B1C /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBB392215D4A3D00D83B1C /* UIFont+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		E25D0D2720DE4F3D0050A254 /* ProjectXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25D0D2B20DE4F3D0050A254 /* ProjectXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectXUITests.swift; sourceTree = "<group>"; };
 		E25D0D2D20DE4F3D0050A254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FBB38C215D48F900D83B1C /* FlexStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexStyles.swift; sourceTree = "<group>"; };
+		E2FBB38D215D48F900D83B1C /* FlexStyleTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexStyleTypes.swift; sourceTree = "<group>"; };
+		E2FBB390215D49D700D83B1C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		E2FBB392215D4A3D00D83B1C /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 		E25D0D0A20DE4F3A0050A254 /* ProjectX */ = {
 			isa = PBXGroup;
 			children = (
+				E2FBB38B215D489E00D83B1C /* Styles */,
 				E25D0D0B20DE4F3A0050A254 /* AppDelegate.swift */,
 				E25D0D0D20DE4F3A0050A254 /* ViewController.swift */,
 				E25D0D0F20DE4F3A0050A254 /* Main.storyboard */,
@@ -165,6 +174,17 @@
 			path = ProjectXUITests;
 			sourceTree = "<group>";
 		};
+		E2FBB38B215D489E00D83B1C /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBB38C215D48F900D83B1C /* FlexStyles.swift */,
+				E2FBB38D215D48F900D83B1C /* FlexStyleTypes.swift */,
+				E2FBB390215D49D700D83B1C /* UIColor+Extensions.swift */,
+				E2FBB392215D4A3D00D83B1C /* UIFont+Extensions.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +196,7 @@
 				E25D0D0420DE4F3A0050A254 /* Sources */,
 				E25D0D0520DE4F3A0050A254 /* Frameworks */,
 				E25D0D0620DE4F3A0050A254 /* Resources */,
+				C93E1BCD64DB2607F7F66416 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +370,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C93E1BCD64DB2607F7F66416 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProjectX/Pods-ProjectX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartStyle/SmartStyle.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartStyle.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectX/Pods-ProjectX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -356,7 +397,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FBB38F215D48F900D83B1C /* FlexStyleTypes.swift in Sources */,
+				E2FBB391215D49D700D83B1C /* UIColor+Extensions.swift in Sources */,
 				E25D0D0E20DE4F3A0050A254 /* ViewController.swift in Sources */,
+				E2FBB38E215D48F900D83B1C /* FlexStyles.swift in Sources */,
+				E2FBB393215D4A3D00D83B1C /* UIFont+Extensions.swift in Sources */,
 				E25D0D0C20DE4F3A0050A254 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

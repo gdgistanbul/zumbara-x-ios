@@ -1,3 +1,23 @@
-PODFILE CHECKSUM: 44822adf25116fba9612f9a6e4184f5ab4db9a7f
+PODS:
+  - Localize-Swift (2.0.0)
+  - SmartStyle (0.1.0):
+    - Localize-Swift
+
+DEPENDENCIES:
+  - SmartStyle (from `SmartStyle/`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Localize-Swift
+
+EXTERNAL SOURCES:
+  SmartStyle:
+    :path: SmartStyle/
+
+SPEC CHECKSUMS:
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  SmartStyle: 88d7a5a4e95dbc0d9aaff02d9cd90612e10126e7
+
+PODFILE CHECKSUM: 83ad72c78216d435e753321804ca956226b8c156
 
 COCOAPODS: 1.5.2
