@@ -24,6 +24,7 @@
 		E2FBB398215D4E1700D83B1C /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2FBB395215D4E1700D83B1C /* CircularStd-Medium.ttf */; };
 		E2FBB399215D4E1700D83B1C /* CircularStd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2FBB396215D4E1700D83B1C /* CircularStd-Book.ttf */; };
 		E2FBB39A215D4E1700D83B1C /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2FBB397215D4E1700D83B1C /* CircularStd-Bold.ttf */; };
+		E2FBB39F215D4FF300D83B1C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FBB3A1215D4FF300D83B1C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		E2FBB395215D4E1700D83B1C /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.ttf"; sourceTree = "<group>"; };
 		E2FBB396215D4E1700D83B1C /* CircularStd-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.ttf"; sourceTree = "<group>"; };
 		E2FBB397215D4E1700D83B1C /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.ttf"; sourceTree = "<group>"; };
+		E2FBB3A0215D4FF300D83B1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E2FBB3A2215D501300D83B1C /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 		E25D0D0A20DE4F3A0050A254 /* ProjectX */ = {
 			isa = PBXGroup;
 			children = (
+				E2FBB39B215D4F5600D83B1C /* Localizable */,
 				E2FBB38B215D489E00D83B1C /* Styles */,
 				E25D0D0B20DE4F3A0050A254 /* AppDelegate.swift */,
 				E25D0D0D20DE4F3A0050A254 /* ViewController.swift */,
@@ -200,6 +204,14 @@
 				E2FBB395215D4E1700D83B1C /* CircularStd-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E2FBB39B215D4F5600D83B1C /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBB3A1215D4FF300D83B1C /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +304,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = E25D0CFF20DE4F3A0050A254;
 			productRefGroup = E25D0D0920DE4F3A0050A254 /* Products */;
@@ -313,6 +326,7 @@
 				E2FBB399215D4E1700D83B1C /* CircularStd-Book.ttf in Resources */,
 				E2FBB398215D4E1700D83B1C /* CircularStd-Medium.ttf in Resources */,
 				E2FBB39A215D4E1700D83B1C /* CircularStd-Bold.ttf in Resources */,
+				E2FBB39F215D4FF300D83B1C /* Localizable.strings in Resources */,
 				E25D0D1620DE4F3D0050A254 /* LaunchScreen.storyboard in Resources */,
 				E25D0D1320DE4F3D0050A254 /* Assets.xcassets in Resources */,
 				E25D0D1120DE4F3A0050A254 /* Main.storyboard in Resources */,
@@ -474,6 +488,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E2FBB3A1215D4FF300D83B1C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2FBB3A0215D4FF300D83B1C /* en */,
+				E2FBB3A2215D501300D83B1C /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -481,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -541,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

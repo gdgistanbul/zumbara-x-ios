@@ -24,6 +24,7 @@
                                 <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customStyle" value="primaryButtonStyle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="common.ok"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
