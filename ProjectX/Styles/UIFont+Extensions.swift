@@ -31,8 +31,7 @@ extension UIFont {
     }
     
     class var button: UIFont {
-        return UIFont.systemFont(ofSize: 15.0)
-//        return UIFont(name: "CircularStd-Bold", size: 15.0)!
+        return UIFont(name: "CircularStd-Bold", size: 15.0)!
     }
     
     class var name: UIFont {
