@@ -1,0 +1,6 @@
+framework module SmartStyle {
+  umbrella header "SmartStyle-umbrella.h"
+
+  export *
+  module * { export * }
+}

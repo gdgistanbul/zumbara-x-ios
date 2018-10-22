@@ -1,22 +1,33 @@
 PODS:
   - Alamofire (4.7.3)
-  - EVReflection (5.6.2):
-    - EVReflection/Core (= 5.6.2)
-  - EVReflection/Core (5.6.2)
+  - EVReflection (5.7.0):
+    - EVReflection/Core (= 5.7.0)
+  - EVReflection/Core (5.7.0)
+  - Localize-Swift (2.0.0)
+  - SmartStyle (0.1.0):
+    - Localize-Swift
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - EVReflection
+  - SmartStyle (from `SmartStyle/`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - EVReflection
+    - Localize-Swift
+
+EXTERNAL SOURCES:
+  SmartStyle:
+    :path: SmartStyle/
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  EVReflection: 640322f8a3aaf78cbc3c23892476b6adb636ebf0
+  EVReflection: c579d225cf0ec062d80f35f5af82acd770016a76
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  SmartStyle: 88d7a5a4e95dbc0d9aaff02d9cd90612e10126e7
 
-PODFILE CHECKSUM: 2957bc01138d95002ce3ca76aa00047ba9e7f4ac
+PODFILE CHECKSUM: 8ca2dd1337a1631ac1b62cc44090cf3b601547cf
 
 COCOAPODS: 1.5.2
